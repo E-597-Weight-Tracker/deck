@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NoCHF app capstone project in Computer Science at Harvard University Extension School, in partial fulfillment of a Master of Liberal Arts degree.">
+    <title>NoCHF | Capstone Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="module" crossorigin src="/assets/index-BIUJoI8v.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D0ejWakv.css">
+  </head>
+  <body>
+    <div class="presentation">
+      <header class="presentation-header">
+        <div class="site-brand">
+          <span>NoCHF</span>
+          <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20512'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eHeart%20held%20by%20an%20open%20hand%3c/title%3e%3c!--%20NoCHF%20color%20variant:%20heart%20%23D7263D,%20hand%20%23343A40;%20original%20geometry%20preserved.%20--%3e%3c!--%20Font%20Awesome%20Free%207.3.1%20icons,%20CC%20BY%204.0.%20Copyright%20Fonticons,%20Inc.%20--%3e%3cpath%20id='heart'%20fill='%23D7263D'%20transform='translate(100.8%2057)%20scale(.73125)'%20d='M241%2087.1l15%2020.7%2015-20.7C296%2052.5%20336.2%2032%20378.9%2032%20452.4%2032%20512%2091.6%20512%20165.1l0%202.6c0%20112.2-139.9%20242.5-212.9%20298.2-12.4%209.4-27.6%2014.1-43.1%2014.1s-30.8-4.6-43.1-14.1C139.9%20410.2%200%20279.9%200%20167.7l0-2.6C0%2091.6%2059.6%2032%20133.1%2032%20175.8%2032%20216%2052.5%20241%2087.1z'%20/%3e%3cpath%20id='hand'%20fill='%23343A40'%20d='M66.7%20384l42.5-42.5c24-24%2056.6-37.5%2090.5-37.5L352%20304c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032l-72%200c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024l112.6%200%20119.7-88.2c17.8-13.1%2042.8-9.3%2055.9%208.5s9.3%2042.8-8.5%2055.9L433.1%20485.5c-23.4%2017.2-51.6%2026.5-80.7%2026.5L32%20512c-17.7%200-32-14.3-32-32l0-64c0-17.7%2014.3-32%2032-32l34.7%200z'%20/%3e%3c/svg%3e" alt="" width="576" height="512">
+        </div>
+        <nav class="slide-navigation" aria-label="Presentation slides">
+          <button class="arrow-button" id="previous-slide" type="button" aria-label="Previous slide" disabled>
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <div class="slide-links">
+            <button type="button" data-slide="0" aria-current="step" aria-controls="welcome">Welcome</button>
+            <button type="button" data-slide="1" aria-controls="background">Background</button>
+            <button type="button" data-slide="2" aria-controls="personas">Personas</button>
+            <button type="button" data-slide="3" aria-controls="integration">Integration</button>
+            <button type="button" data-slide="4" aria-controls="design">Design</button>
+            <button type="button" data-slide="5" aria-controls="user-test">User Test</button>
+            <button type="button" data-slide="6" aria-controls="report">Report</button>
+            <button type="button" data-slide="7" aria-controls="team">Team</button>
+          </div>
+          <button class="arrow-button" id="next-slide" type="button" aria-label="Next slide">
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="slide-viewport" aria-label="Project presentation">
+        <div class="slide-track">
+          <section class="slide" id="welcome" aria-labelledby="welcome-title">
+            <div class="slide-content welcome-content">
+              <div class="welcome-brand">
+                <h1 id="welcome-title">NoCHF</h1>
+                <img class="welcome-logo" src="/assets/nochf-logo-CDy3w9ef.png" alt="" width="1152" height="1024">
+              </div>
+              <p class="welcome-context">This site outlines the purpose and development of the NoCHF app, a student capstone project to meet partial fulfillment of the requirements for a Master of Liberal Arts degree from <strong>Harvard University Extension School</strong></p>
+              <p class="welcome-intro">NoCHF is an app that aims to reduce avoidable hospitalizations and emergency room visits for people living with congestive heart failure. The app:</p>
+              <ul class="welcome-goals"> 
+                <li>Ensures daily blood pressure and weight measurements.</li>
+                <li>Alerts patients when their readings meet doctor-defined criteria for follow up with their professional care giver.</li>
+                <li>Provides a simple, easy-to-use phone app designed for older adults.</li>
+              </ul>
+            </div>
+          </section>
+          <section class="slide" id="background" aria-labelledby="background-title" aria-hidden="true" inert>
+            <div class="slide-content background-content">
+              <p class="eyebrow">Understanding CHF</p>
+              <h2 id="background-title">Congestive heart failure</h2>
+              <p class="background-definition">
+                Congestive heart failure (CHF) is heart failure accompanied by fluid buildup, often in the lungs, legs, ankles, or other tissues. Two common forms are <strong>HFrEF</strong>, in which the heart pumps weakly, and <strong>HFpEF</strong>, in which the heart is too stiff to fill properly.<sup><a class="citation" href="https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained" target="_blank" rel="noopener noreferrer" aria-label="Source 1: American Heart Association heart failure overview">1</a></sup><sup><a class="citation" href="https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure" target="_blank" rel="noopener noreferrer" aria-label="Source 2: American Heart Association types of heart failure">2</a></sup>
+                <strong>Advanced heart failure</strong> is a severe stage in which symptoms persist despite treatment and may occur even at rest. CHF can progress to this stage, but fluid buildup alone does not mean the disease is advanced.<sup><a class="citation" href="#background-reference-7" aria-label="See reference 7: American Heart Association advanced heart failure">7</a></sup>
+              </p>
+
+              <div class="background-grid">
+                <div class="prevalence-column">
+                <figure class="prevalence-panel">
+                  <div class="panel-heading">
+                    <div>
+                      <p class="panel-kicker">U.S. adults living with heart failure</p>
+                      <h3>6.7M estimate → 10.3M by 2040</h3>
+                    </div>
+                    <a class="citation citation-box card-reference" href="https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf" target="_blank" rel="noopener noreferrer" aria-label="Source 3: Heart Failure Society of America fact sheet">3</a>
+                  </div>
+                  <div class="prevalence-bars" role="img" aria-label="Heart failure prevalence: 6.7 million adults in 2017 to 2020, projected to reach 8.7 million in 2030 and 10.3 million in 2040">
+                    <div class="bar-item">
+                      <span class="bar-value">6.7M</span>
+                      <span class="prevalence-bar observed" style="--bar-height: 65.05%"></span>
+                      <span class="bar-year">2017–20</span>
+                      <span class="bar-kind">Estimate</span>
+                    </div>
+                    <div class="bar-item">
+                      <span class="bar-value">8.7M</span>
+                      <span class="prevalence-bar projected" style="--bar-height: 84.47%"></span>
+                      <span class="bar-year">2030</span>
+                      <span class="bar-kind">Projected</span>
+                    </div>
+                    <div class="bar-item">
+                      <span class="bar-value">10.3M</span>
+                      <span class="prevalence-bar projected" style="--bar-height: 100%"></span>
+                      <span class="bar-year">2040</span>
+                      <span class="bar-kind">Projected</span>
+                    </div>
+                  </div>
+                  <figcaption>The 6.7 million estimate uses 2017–2020 data; later values are projections.</figcaption>
+                </figure>
+                <div class="impact-cards">
+                  <article class="impact-card mortality-card">
+                  <a class="citation citation-box card-reference" href="#background-reference-4" aria-label="See reference 4">4</a>
+                    <i class="fa-solid fa-file-medical" aria-hidden="true"></i>
+                    <div>
+                      <p class="impact-value">62,546</p>
+                      <p class="impact-label">U.S. deaths with congestive heart failure coded as the underlying cause in 2023.</p>
+                      <p class="impact-note">ICD-10 I50.0; excludes deaths recorded under other heart-failure codes.</p>
+                    </div>
+                  </article>
+                  <article class="impact-card cost-card">
+                  <a class="citation citation-box card-reference" href="#background-reference-5" aria-label="See reference 5">5</a>
+                    <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+                    <div>
+                      <p class="impact-value">Int$65,749</p>
+                      <p class="impact-label">Mean annual cost per U.S. patient across studies of advanced heart failure.</p>
+                      <p class="impact-note">2023 international dollars; hospitalization was the main cost driver.</p>
+                    </div>
+                  </article>
+                </div>
+                </div>
+                <div class="monitoring-column">
+                <article class="measurement-evidence" aria-labelledby="measurement-evidence-title">
+                  <a class="citation citation-box card-reference" href="#background-reference-6" aria-label="See reference 6">6</a>
+                  <p class="measurement-rate">74%<span>of days, on average</span></p>
+                  <div>
+                    <h3 id="measurement-evidence-title">Daily monitoring is hard to sustain for CHF patients</h3>
+                    <p>Patients completed the full set of weight, blood pressure, heart-rate, and symptom readings on approximately 74% of days in a heart-failure monitoring study.</p>
+                  </div>
+                </article>
+                <article class="connected-monitoring-evidence" aria-labelledby="connected-monitoring-title">
+                  <a class="citation citation-box card-reference" href="#background-reference-8" aria-label="See reference 8">8</a>
+                  <h3 id="connected-monitoring-title">Withings: Sustaining home monitoring</h3>
+                  <p class="connected-monitoring-context">22,177 adults using connected blood pressure monitors.</p>
+                  <div class="connected-monitoring-stats">
+                    <p><strong>54%</strong><span>continued using their device around one year later.</span></p>
+                    <p><strong>44%</strong><span>of those continuing took only occasional, scattered measurements.</span></p>
+                  </div>
+                  <p class="connected-monitoring-scope"><strong>Not a CHF-specific study.</strong> Continued use does not mean daily adherence.</p>
+                </article>
+                </div>
+              </div>
+              <aside class="background-references" aria-labelledby="background-references-title">
+                <p id="background-references-title">References</p>
+                <ol>
+                  <li>American Heart Association. (n.d.). <cite>Heart failure explained: Understanding symptoms, causes, diagnosis and treatment</cite>. Retrieved September 24, 2026, from <a href="https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained</a></li>
+                  <li id="background-reference-2">American Heart Association. (2025, May 21). <cite>Types of heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure</a></li>
+                  <li>Heart Failure Society of America. (2025). <cite>Incidence, prevalence, and lifetime risk estimates of heart failure: HFSTATS sheet, 2025 update</cite> [Fact sheet]. <a href="https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf" target="_blank" rel="noopener noreferrer">https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf</a></li>
+                  <li id="background-reference-4">National Center for Health Statistics. (2026, June 2). <cite>Multiple cause of death mortality file: Control total table 1, United States, 2023</cite> [Data table]. Centers for Disease Control and Prevention. <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf" target="_blank" rel="noopener noreferrer">https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf</a></li>
+                  <li id="background-reference-5">Goldraich, L. A., do Nascimento, D. M., Santos, L. P., Lemos, D. M., Marcolino, M. A. Z., Clausell, N., &amp; Etges, A. P. B. da S. (2025). Costs of medical treatment of advanced heart failure: A scoping review. <cite>Systematic Reviews, 14</cite>, Article 215. <a href="https://doi.org/10.1186/s13643-025-02952-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/s13643-025-02952-7</a></li>
+                  <li id="background-reference-6">Ware, P., Dorai, M., Ross, H. J., Cafazzo, J. A., Laporte, A., Boodoo, C., &amp; Seto, E. (2019). Patient adherence to a mobile phone–based heart failure telemonitoring program: A longitudinal mixed-methods study. <cite>JMIR mHealth and uHealth, 7</cite>(2), Article e13259. <a href="https://doi.org/10.2196/13259" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/13259</a></li>
+                  <li id="background-reference-7">American Heart Association. (2025a, June 19). <cite>Advanced heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/living-with-heart-failure-and-managing-advanced-hf/advanced-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/living-with-heart-failure-and-managing-advanced-hf/advanced-heart-failure</a></li>
+                  <li id="background-reference-8">Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., &amp; Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. <cite>Journal of Hypertension, 43</cite>(1), 90–97. <a href="https://doi.org/10.1097/HJH.0000000000003861" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/HJH.0000000000003861</a></li>
+                </ol>
+              </aside>
+            </div>
+          </section>
+          <section class="slide" id="personas" aria-labelledby="personas-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The audience</p>
+              <h2 id="personas-title">Personas</h2>
+              <p class="slide-intro">The people we are designing for and what matters to them.</p>
+              <p class="slide-prompt">Introduce representative users, their goals, daily routines, and the challenges the app should address.</p>
+            </div>
+          </section>
+          <section class="slide" id="integration" aria-labelledby="integration-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The connections</p>
+              <h2 id="integration-title">Integration</h2>
+              <p class="slide-intro">How the app fits into the tools and routines people already use.</p>
+              <p class="slide-prompt">Outline planned connections, how information moves between systems, and the role of sharing and exports.</p>
+            </div>
+          </section>
+          <section class="slide" id="design" aria-labelledby="design-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The approach</p>
+              <h2 id="design-title">Design</h2>
+              <p class="slide-intro">How the idea becomes an experience.</p>
+              <p class="slide-prompt">Show sketches, the main user flow, and the decisions behind the prototype.</p>
+            </div>
+          </section>
+          <section class="slide" id="user-test" aria-labelledby="user-test-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The feedback</p>
+              <h2 id="user-test-title">User Test</h2>
+              <p class="slide-intro">What happened when people tried it.</p>
+              <p class="slide-prompt">Explain the test tasks, key observations, and changes informed by feedback.</p>
+            </div>
+          </section>
+          <section class="slide" id="report" aria-labelledby="report-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The takeaways</p>
+              <h2 id="report-title">Report</h2>
+              <p class="slide-intro">What we learned and where we go next.</p>
+              <p class="slide-prompt">Summarize outcomes, limitations, and next steps, with a link to the full report.</p>
+            </div>
+          </section>
+          <section class="slide" id="team" aria-labelledby="team-title" aria-hidden="true" inert>
+            <div class="slide-content">
+              <p class="eyebrow">The people</p>
+              <h2 id="team-title">Team</h2>
+              <p class="slide-intro">Who we are and what each person brings to the project.</p>
+              <p class="slide-prompt">Introduce team members with names, roles, and photos.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="presentation-footer">
+        <span>nochf.com</span>
+        <span class="keyboard-hint">Use &#8592; and &#8594; to navigate</span>
+        <span id="slide-status" role="status" aria-live="polite" aria-atomic="true">01 / 08 · Welcome</span>
+      </footer>
+    </div>
+  </body>
+</html>

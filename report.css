@@ -1,0 +1,50 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #253434; background: #edf1f0; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.report-toolbar { max-width: 1056px; margin: 20px auto 0; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 0 24px; font-size: 14px; }
+.report-toolbar a { color: #075e5e; }
+.report-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.report-toolbar button { font: inherit; font-weight: 600; padding: 12px 18px; background: #0b7979; border: 0; border-radius: 6px; color: white; cursor: pointer; }
+.report-toolbar button:disabled { opacity: .5; cursor: wait; }
+.report-toolbar #toggle-bp-lines { background: white; color: #253434; border: 1px solid #abb9b7; }
+.report-toolbar #toggle-bp-lines[aria-pressed="true"] { background: #e4f2f1; border-color: #0b7979; }
+.report-toolbar button:focus-visible, .report-toolbar a:focus-visible { outline: 3px solid #b98b43; outline-offset: 4px; }
+.print-help { margin: 12px auto 20px; max-width: 1008px; padding: 0 24px; font-size: 13px; color: #536060; }
+.report-page { display: flex; flex-direction: column; width: 11in; min-height: 8.5in; padding: .5in; margin: 0 auto 32px; background: white; box-shadow: 0 3px 18px #00000012; }
+.brand { display: flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 700; }
+h1 { margin: 0; font-size: 18px; font-weight: 600; }
+.patient-row { display: flex; justify-content: center; gap: 28px; margin: 12px 0 15px; font-size: 15px; }
+.patient-row strong { font-weight: 600; }
+.daily-average-note { margin: -3px 0 15px; font-size: 12px; color: #526261; }
+.report-header { text-align: center; border-bottom: 1px solid #abb9b7; }
+.chart-section { padding-top: 12px; break-inside: avoid; }
+.chart-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+h2 { margin: 0; font-size: 16px; font-weight: 600; }
+h2 span { font-weight: 400; font-size: 12px; margin-left: 5px; color: #526261; }
+.chart-heading p { font-size: 11px; margin: 0; color: #435352; }
+.bp-legend { display: flex; align-items: center; gap: 16px; font-size: 11px; }
+.bp-legend[hidden] { display: none; }
+.bp-legend > span { display: inline-flex; align-items: center; gap: 5px; }
+.bp-legend i { display: inline-block; width: 20px; border-top: 2px solid #344e4e; }
+.bp-legend .diastolic-swatch { border-top: 2px solid #0b7979; }
+.chart-description { display: flex; justify-content: space-between; gap: 12px; margin: 5px 0 3px; font-size: 10.5px; color: #526261; }
+.chart-section svg { display: block; width: 100%; overflow: visible; font-variant-numeric: tabular-nums; }
+.chart-section svg text { font-family: Arial, Helvetica, sans-serif; fill: #253434; }
+.chart-section svg .grid { stroke: #dde3e2; stroke-width: .65; }
+.chart-section svg .average-label { font-size: 11.5px; font-weight: 600; paint-order: stroke; stroke: white; stroke-width: 3px; stroke-linejoin: round; }
+.chart-section svg .axis-label { font-size: 10px; fill: #435352; }
+.weight-section { border-top: 1px solid #ccd5d3; padding-top: 12px; }
+.report-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 10px; margin-top: auto; border-top: 1px solid #abb9b7; font-size: 9.5px; color: #526261; }
+.footer-source { display: flex; align-items: center; gap: 12px; }
+@media screen and (max-width: 1080px) {
+  .report-toolbar { flex-wrap: wrap; }
+  .report-toolbar > span { order: 3; width: 100%; }
+  .report-page { margin-left: 12px; margin-right: 12px; }
+}
+@page { size: letter landscape; margin: .5in; }
+@media print {
+  :root, body { background: white; }
+  .report-toolbar, .print-help { display: none; }
+  .report-page { width: 10in; min-height: 7.5in; padding: 0; margin: 0; box-shadow: none; }
+  * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

@@ -22,13 +22,14 @@
           </button>
           <div class="slide-links">
             <button type="button" data-slide="0" aria-current="step" aria-controls="welcome">Welcome</button>
-            <button type="button" data-slide="1" aria-controls="background">Background</button>
-            <button type="button" data-slide="2" aria-controls="personas">Personas</button>
-            <button type="button" data-slide="3" aria-controls="integration">Integration</button>
+            <button type="button" data-slide="1" aria-controls="background">CHF</button>
+            <button type="button" data-slide="2" aria-controls="monitoring">Measurements</button>
+            <button type="button" data-slide="3" aria-controls="personas">Personas</button>
             <button type="button" data-slide="4" aria-controls="design">Design</button>
-            <button type="button" data-slide="5" aria-controls="user-test">User Test</button>
-            <button type="button" data-slide="6" aria-controls="report">Report</button>
-            <button type="button" data-slide="7" aria-controls="team">Team</button>
+            <button type="button" data-slide="5" aria-controls="integration">Devices</button>
+            <button type="button" data-slide="6" aria-controls="user-test">User Test Feedback</button>
+            <button type="button" data-slide="7" aria-controls="report">Paper</button>
+            <button type="button" data-slide="8" aria-controls="team">Team</button>
           </div>
           <button class="arrow-button" id="next-slide" type="button" aria-label="Next slide">
             <span aria-hidden="true">&#8594;</span>
@@ -44,33 +45,32 @@
                 <h1 id="welcome-title">NoCHF</h1>
                 <img class="welcome-logo" src="img/nochf-logo.png" alt="" width="1152" height="1024">
               </div>
-              <p class="welcome-context">This site outlines the purpose and development of the NoCHF app, a student capstone project to meet partial fulfillment of the requirements for a Master of Liberal Arts degree from <strong>Harvard University Extension School</strong></p>
-              <p class="welcome-intro">NoCHF is an app that aims to reduce avoidable hospitalizations and emergency room visits for people living with congestive heart failure. The app:</p>
+              <p class="welcome-intro">NoCHF is an app that aims to reduce avoidable hospitalizations and emergency room visits for people living with congestive heart failure by making it easier to track daily measurements by:</p>
               <ul class="welcome-goals"> 
-                <li>Ensures daily blood pressure and weight measurements.</li>
-                <li>Alerts patients when their readings meet doctor-defined criteria for follow up with their professional care giver.</li>
-                <li>Provides a simple, easy-to-use phone app designed for older adults.</li>
+                <li>Providing a simple, easy-to-use phone app designed for older adults.</li>
+                <li>Ensuring daily blood pressure and weight measurements through accountability provided by a friend, family member, or caregiver.</li>
               </ul>
+              <p class="welcome-context"><em>This site outlines the purpose and development of the NoCHF app, a student capstone project to meet partial fulfillment of the requirements for a Master of Liberal Arts degree from <strong>Harvard University Extension School</strong></em></p>
             </div>
           </section>
           <section class="slide" id="background" aria-labelledby="background-title" aria-hidden="true" inert>
             <div class="slide-content background-content">
               <p class="eyebrow">Understanding CHF</p>
-              <h2 id="background-title">Congestive heart failure</h2>
+              <h2 id="background-title">What is CHF?</h2>
               <p class="background-definition">
                 Congestive heart failure (CHF) is heart failure accompanied by fluid buildup, often in the lungs, legs, ankles, or other tissues. Two common forms are <strong>HFrEF</strong>, in which the heart pumps weakly, and <strong>HFpEF</strong>, in which the heart is too stiff to fill properly.<sup><a class="citation" href="#background-reference-1" aria-label="Source 1: American Heart Association heart failure overview">1</a></sup><sup><a class="citation" href="#background-reference-2" aria-label="Source 2: American Heart Association types of heart failure">2</a></sup>
-                Daily weight checks are a key part of CHF self-care to detect fluid retention; blood pressure should also be tracked as directed by the healthcare team.<sup><a class="citation" href="#background-reference-3" aria-label="See reference 3: American Heart Association monitoring guidance">3</a></sup>
               </p>
 
+              <p class="background-definition">In the United States, an estimated <strong>nearly 7 million adults</strong> were living with heart failure based on 2017–2020 data,<sup><a class="citation" href="#background-reference-3" aria-label="Source 3: Heart failure prevalence">3</a></sup> CHF was recorded as the underlying cause of <strong>over 60,000 deaths in 2023</strong>,<sup><a class="citation" href="#background-reference-4" aria-label="Source 4: CHF mortality">4</a></sup> and hospital admissions with CHF as the principal diagnosis accounted for an estimated <strong>$14.5 billion in U.S. hospital costs in 2018</strong>.<sup><a class="citation" href="#background-reference-5" aria-label="Source 5: CHF hospital costs">5</a></sup></p>
+
               <div class="background-grid">
-                <div class="prevalence-column">
                 <figure class="prevalence-panel">
                   <div class="panel-heading">
                     <div>
                       <p class="panel-kicker">U.S. adults living with heart failure</p>
                       <h3>6.7M estimate → 10.3M by 2040</h3>
                     </div>
-                    <a class="citation citation-box card-reference" href="#background-reference-4" aria-label="Source 4: Heart Failure Society of America fact sheet">4</a>
+                    <a class="citation citation-box card-reference" href="#background-reference-3" aria-label="Source 3: Heart Failure Society of America fact sheet">3</a>
                   </div>
                   <div class="prevalence-bars" role="img" aria-label="Heart failure prevalence: 6.7 million adults in 2017 to 2020, projected to reach 8.7 million in 2030 and 10.3 million in 2040">
                     <div class="bar-item">
@@ -96,7 +96,7 @@
                 </figure>
                 <div class="impact-cards">
                   <article class="impact-card mortality-card">
-                  <a class="citation citation-box card-reference" href="#background-reference-5" aria-label="See reference 5">5</a>
+                  <a class="citation citation-box card-reference" href="#background-reference-4" aria-label="See reference 4">4</a>
                     <div>
                       <p class="impact-value">62,546</p>
                       <p class="impact-label">U.S. deaths with congestive heart failure coded as the underlying cause in 2023.</p>
@@ -104,7 +104,7 @@
                     </div>
                   </article>
                   <article class="impact-card cost-card">
-                  <a class="citation citation-box card-reference" href="#background-reference-6" aria-label="See reference 6">6</a>
+                  <a class="citation citation-box card-reference" href="#background-reference-5" aria-label="See reference 5">5</a>
                     <div>
                       <p class="impact-value">$14.5 billion</p>
                       <p class="impact-label">Estimated U.S. hospital costs for admissions with CHF as the principal diagnosis in 2018.</p>
@@ -112,10 +112,22 @@
                     </div>
                   </article>
                 </div>
-                </div>
-                <div class="monitoring-column">
+              </div>
+              <p class="references-link"><a href="#background-references">References</a></p>
+            </div>
+          </section>
+          <section class="slide" id="monitoring" aria-labelledby="monitoring-title" aria-hidden="true" inert>
+            <div class="slide-content background-content">
+              <p class="eyebrow">Daily Measurements</p>
+              <h2 id="monitoring-title">Sustaining home monitoring</h2>
+              <p class="background-definition">For people with <strong>CHF</strong>, daily weight checks can reveal <strong>fluid buildup</strong>. This extra fluid collects in the lungs, legs, or abdomen and may signal worsening heart failure.<sup><a class="citation" href="#background-reference-6" aria-label="See reference 6">6</a></sup><sup><a class="citation" href="#background-reference-7" aria-label="See reference 7">7</a></sup></p>
+              <p class="background-definition">Blood pressure is another important signal in <strong>CHF</strong>: high pressure increases the resistance the heart must pump against, adding to its workload.<sup><a class="citation" href="#background-reference-8" aria-label="See reference 8">8</a></sup> Low pressure can also accompany heart failure or result from heart-failure medicines.<sup><a class="citation" href="#background-reference-9" aria-label="See reference 9">9</a></sup><sup><a class="citation" href="#background-reference-10" aria-label="See reference 10">10</a></sup></p>
+              <p class="background-definition"><strong>Early intervention</strong> starts with reporting sudden weight gain or blood-pressure changes outside the care team’s agreed range, so the team can adjust treatment promptly.<sup><a class="citation" href="#background-reference-6" aria-label="See reference 6">6</a></sup><sup><a class="citation" href="#background-reference-11" aria-label="See reference 11">11</a></sup> In particular, responding to fluid-related weight gain—even before the person feels unwell—may help avoid hospitalization for worsening heart failure.<sup><a class="citation" href="#background-reference-12" aria-label="See reference 12">12</a></sup></p>
+              <p class="background-definition">For many people living with CHF, daily measurements become part of a routine, but others find them difficult to sustain. In one heart-failure study, patients completed all daily readings on about 74% of days,<sup><a class="citation" href="#background-reference-13" aria-label="See reference 13">13</a></sup> while a separate study of connected blood-pressure monitor users—not specifically people with CHF—found that only 54% continued using their device around a year later, and 44% of those continuing took only occasional measurements.<sup><a class="citation" href="#background-reference-14" aria-label="See reference 14">14</a></sup></p>
+              <p class="background-definition"><strong>We believe a simple, easy-to-use app, combined with support and accountability from a caregiver, can help people take measurements more consistently.</strong></p>
+              <div class="monitoring-grid">
                 <article class="measurement-evidence" aria-labelledby="measurement-evidence-title">
-                  <a class="citation citation-box card-reference" href="#background-reference-7" aria-label="See reference 7">7</a>
+                  <a class="citation citation-box card-reference" href="#background-reference-13" aria-label="See reference 13">13</a>
                   <p class="measurement-rate">74%<span>of days, on average</span></p>
                   <div>
                     <h3 id="measurement-evidence-title">Daily monitoring is hard to sustain for CHF patients</h3>
@@ -123,7 +135,7 @@
                   </div>
                 </article>
                 <article class="connected-monitoring-evidence" aria-labelledby="connected-monitoring-title">
-                  <a class="citation citation-box card-reference" href="#background-reference-8" aria-label="See reference 8">8</a>
+                  <a class="citation citation-box card-reference" href="#background-reference-14" aria-label="See reference 14">14</a>
                   <h3 id="connected-monitoring-title">Withings: Sustaining home monitoring</h3>
                   <p class="connected-monitoring-context">22,177 adults using connected blood pressure monitors.</p>
                   <div class="connected-monitoring-stats">
@@ -132,61 +144,148 @@
                   </div>
                   <p class="connected-monitoring-scope"><strong>Not a CHF-specific study.</strong> Continued use does not mean daily adherence.</p>
                 </article>
-                </div>
               </div>
-              <aside class="background-references" aria-labelledby="background-references-title">
-                <p id="background-references-title">References</p>
-                <ol>
-                  <li id="background-reference-1">American Heart Association. (n.d.). <cite>Heart failure explained: Understanding symptoms, causes, diagnosis and treatment</cite>. Retrieved September 24, 2026, from <a href="https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained</a></li>
-                  <li id="background-reference-2">American Heart Association. (2025, May 21). <cite>Types of heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure</a></li>
-                  <li id="background-reference-3">American Heart Association. (2025, May 29). <cite>Managing heart failure symptoms</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure/managing-heart-failure-symptoms" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure/managing-heart-failure-symptoms</a></li>
-                  <li id="background-reference-4">Heart Failure Society of America. (2025). <cite>Incidence, prevalence, and lifetime risk estimates of heart failure: HFSTATS sheet, 2025 update</cite> [Fact sheet]. <a href="https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf" target="_blank" rel="noopener noreferrer">https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf</a></li>
-                  <li id="background-reference-5">National Center for Health Statistics. (2026, June 2). <cite>Multiple cause of death mortality file: Control total table 1, United States, 2023</cite> [Data table]. Centers for Disease Control and Prevention. <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf" target="_blank" rel="noopener noreferrer">https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf</a></li>
-                  <li id="background-reference-6">Zilberberg, M. D., Nathanson, B. H., Sulham, K., Mohr, J. F., Goodwin, M. M., &amp; Shorr, A. F. (2023). Descriptive epidemiology and outcomes of patients with short stay hospitalizations for the treatment of congestive heart failure in the US. <cite>ClinicoEconomics and Outcomes Research, 15</cite>, 139–149. <a href="https://doi.org/10.2147/CEOR.S400882" target="_blank" rel="noopener noreferrer">https://doi.org/10.2147/CEOR.S400882</a></li>
-                  <li id="background-reference-7">Ware, P., Dorai, M., Ross, H. J., Cafazzo, J. A., Laporte, A., Boodoo, C., &amp; Seto, E. (2019). Patient adherence to a mobile phone–based heart failure telemonitoring program: A longitudinal mixed-methods study. <cite>JMIR mHealth and uHealth, 7</cite>(2), Article e13259. <a href="https://doi.org/10.2196/13259" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/13259</a></li>
-                  <li id="background-reference-8">Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., &amp; Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. <cite>Journal of Hypertension, 43</cite>(1), 90–97. <a href="https://doi.org/10.1097/HJH.0000000000003861" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/HJH.0000000000003861</a></li>
-                </ol>
-              </aside>
+              <p class="references-link"><a href="#background-references">References</a></p>
             </div>
           </section>
           <section class="slide" id="personas" aria-labelledby="personas-title" aria-hidden="true" inert>
-            <div class="slide-content">
+            <div class="slide-content personas-content">
               <p class="eyebrow">The audience</p>
               <h2 id="personas-title">Personas</h2>
-              <p class="slide-intro">The people we are designing for and what matters to them.</p>
-              <p class="slide-prompt">Introduce representative users, their goals, daily routines, and the challenges the app should address.</p>
-            </div>
-          </section>
-          <section class="slide" id="integration" aria-labelledby="integration-title" aria-hidden="true" inert>
-            <div class="slide-content">
-              <p class="eyebrow">The connections</p>
-              <h2 id="integration-title">Integration</h2>
-              <p class="slide-intro">How the app fits into the tools and routines people already use.</p>
-              <p class="slide-prompt">Outline planned connections, how information moves between systems, and the role of sharing and exports.</p>
+              <p class="persona-definition">A persona is a fictional representation of a target user that helps guide design decisions. Below are two personas that help us design NoCHF around the needs of a person living independently with CHF and a family caregiver supporting their daily self-care from a distance.</p>
+              <div class="personas-grid">
+                <div class="persona-column">
+                  <h3 class="persona-role" id="persona-1-title">Persona 1: Independent Living Patient</h3>
+                <article class="persona-card" aria-labelledby="persona-1-name">
+                  <img class="persona-image" src="img/persona-chf-user.png" alt="Mary Johnson gardening among flowers." width="1254" height="1254">
+                  <p class="persona-caption"><em>Figure 2. Persona 1. Image was generated by ChatGPT</em></p>
+                  <h4 class="persona-name" id="persona-1-name">Mary Johnson</h4>
+                  <p><strong>80, Female, Retired Elementary School Teacher</strong></p>
+                  <p><strong>Motto:</strong> “Life is better when shared with family and friends.”</p>
+                  <h5>Bio</h5>
+                  <p>Mary is a retired teacher who lives alone in her own home. She was diagnosed with congestive heart failure (CHF) four years ago and manages her condition with daily medication as well as recording her weight and eating habits in her CHF journal. Mary values her independence and wants to remain in her own home, but living at home independently has become more challenging and she quickly admits that her memory is not what it used to be.</p>
+                  <h5>Business Domain</h5>
+                  <ul>
+                  <li>Lives alone and has congestive heart failure.</li>
+                  <li>Started managing her health using a Health Diary provided by her cardiologist.</li>
+                  <li>Prefers simple technology and avoids complicated apps.</li>
+                  <li>Has an old iPhone that no longer receives updates.</li>
+                  </ul>
+                  <h5>Other People Say</h5>
+                  <p><strong>What her family says:</strong> “Mary wants to stay independent, but we're growing anxious about her ability to keep up with her self-care. We live a state away and aren't sure how to talk with her about when she might need help at home or how we could afford it.”</p>
+                  <p><strong>What her neighbour says:</strong> “Mary is always friendly and enjoys taking care of her garden. She likes doing things on her own and rarely asks anyone for help.”</p>
+                  <h5>Grokkability</h5>
+                  <ul>
+                  <li>A Master Gardener who volunteers at the local high school from 9:00 AM to 3:00 PM on Tuesdays and Thursdays.</li>
+                  <li>Talks to her eight-year-old granddaughter on Sunday afternoons via a video call.</li>
+                  <li>Regularly takes short walks, stopping to talk to her neighbors about the weather.</li>
+                  </ul>
+                  <h5>Pet Peeve</h5>
+                  <ul>
+                  <li>Becomes frustrated when people tell her technology is simple but it doesn't make sense to her.</li>
+                  <li>Gets discouraged by her time being taken up by tasks that used to be easy for her.</li>
+                  </ul>
+                </article>
+                </div>
+                <div class="persona-column">
+                  <h3 class="persona-role" id="persona-2-title">Persona 2: Family Caregiver</h3>
+                <article class="persona-card" aria-labelledby="persona-2-name">
+                  <img class="persona-image" src="img/persona-assistor.png" alt="Emily Johnson working at her laptop with her mother on a video call nearby." width="1254" height="1254">
+                  <p class="persona-caption"><em>Figure 3. Persona 2. Image was generated by ChatGPT</em></p>
+                  <h4 class="persona-name" id="persona-2-name">Emily Johnson</h4>
+                  <p><strong>48, Female, Program Manager</strong></p>
+                  <p><strong>Motto:</strong> “Family means showing up when you're needed.”</p>
+                  <h5>Bio</h5>
+                  <p>Emily is a Program Manager who is always trying to stay one step ahead in her busy life. She lives with her husband and teenage son and values spending time with her family. The family moved again for her and her husband’s new jobs and now lives in a city without family nearby, where they are excited to make new friends.</p>
+                  <p>Over the past few years, she has gradually taken on more responsibility for helping her elderly mother manage her congestive heart failure. While her mother lives independently, Emily is becoming anxious and uncertain about whether her mother is taking adequate care of herself.</p>
+                  <h5>Business Domain</h5>
+                  <ul>
+                  <li>Works as a Program Manager because she is organized and good at juggling many different tasks.</li>
+                  <li>Has to balance work, family life, and now some caregiving responsibilities for her mother, who lives one time zone away.</li>
+                  <li>Bought herself the new iPhone 17, giving her son the iPhone 15.</li>
+                  </ul>
+                  <h5>Other People Say</h5>
+                  <p><strong>What her mother says:</strong> “Emily never makes me feel like I'm a burden. But she's a little too much like I was at her age—always racing around.”</p>
+                  <p><strong>What her sister says:</strong> “Emily is the person everyone relies on. She somehow manages to take care of everyone, and I can always call her and speak openly and honestly.”</p>
+                  <h5>Grokkability</h5>
+                  <ul>
+                  <li>Enjoys spending time with her family and close friends and planning trips and family gatherings.</li>
+                  <li>Reads books and listens to podcasts during her commute.</li>
+                  <li>Uses technology every day but values simplicity over flashy features.</li>
+                  </ul>
+                  <h5>Pet Peeve</h5>
+                  <ul>
+                  <li>Disorganized information and last-minute changes to carefully made plans.</li>
+                  <li>Having to repeat the same task multiple times.</li>
+                  </ul>
+                </article>
+                </div>
+              </div>
             </div>
           </section>
           <section class="slide" id="design" aria-labelledby="design-title" aria-hidden="true" inert>
-            <div class="slide-content">
-              <p class="eyebrow">The approach</p>
-              <h2 id="design-title">Design</h2>
-              <p class="slide-intro">How the idea becomes an experience.</p>
-              <p class="slide-prompt">Show sketches, the main user flow, and the decisions behind the prototype.</p>
+            <div class="slide-content design-content">
+              <div class="design-copy">
+                <p class="eyebrow">The approach</p>
+                <h2 id="design-title">Design</h2>
+                <p class="design-intro">Make daily measurements easy to understand and keep up with.</p>
+                <h3 class="design-section-title">Devices</h3>
+                <ul class="design-principles">
+                  <li><strong>Make taking a weight or blood pressure measurement easy.</strong> NoCHF integrates with Wi-Fi-enabled scales and blood pressure cuffs. Once the devices are set up, the person living with CHF only needs to step on the scale or put on the cuff and push a button to take a measurement; readings sync automatically.</li>
+                </ul>
+                <h3 class="design-section-title">The app</h3>
+                <ul class="design-principles">
+                  <li><strong>Make increases easy to spot.</strong> When the person living with CHF or their assistor opens the app, they immediately <em>see any missed measurements</em> and any increases compared with earlier readings.</li>
+                  <li><strong>Make Technology Easy:</strong> Design for older adults with large text, easy navigation, and a simple app that does only what's needed.</li>
+                  <li><strong>Create Reports:</strong> Create a report that may be shared with your doctor during regular or emergency visits. View an example of the report <a href="report.html" target="_blank" rel="noopener">here</a>.</li>
+                </ul>
+              </div>
+              <figure class="design-preview">
+                <img src="img/app-home-transparent.png" alt="NoCHF home screen showing missing blood pressure for today, a recorded weight of 124.2 pounds, and blood-pressure and weight trend charts." width="854" height="1842">
+                <figcaption>Home screen design</figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="slide" id="integration" aria-labelledby="integration-title" aria-hidden="true" inert>
+            <div class="slide-content integration-content">
+              <p class="eyebrow">The Devices</p>
+              <h2 id="integration-title">Devices</h2>
+              <p class="integration-intro">NoCHF is designed to grow with additional device integrations. Withings is the initial integration for weight and blood-pressure measurements. Devices are set up through the Withings app; with the user’s permission, NoCHF’s backend retrieves readings from their Withings account.</p>
+              <p class="integration-sync">Both devices support Wi-Fi, allowing readings to sync after a measurement. Once a user connects their Withings account, NoCHF can subscribe to measurement updates and retrieve new readings automatically for display in the app. Withings typically delivers update notifications within two minutes of receiving the data; device syncing and app refresh can add time. <a href="https://developer.withings.com/developer-guide/v3/data-api/notifications/notification-overview/" target="_blank" rel="noopener noreferrer">How automatic updates work</a></p>
+              <div class="integration-grid">
+                <article class="device-card" aria-labelledby="scale-title">
+                  <img class="device-image" src="assets/integrations/withings-body-smart.jpg" alt="Black Withings Body Smart scale with a digital display" width="1200" height="1200">
+                  <div class="device-details">
+                    <p class="device-type">Connected scale</p>
+                    <h4 id="scale-title">Withings Body Smart</h4>
+                    <p>Records weight. Withings specifies <strong>weight precision of 50 g (about 0.1 lb)</strong>.</p>
+                    <p class="device-links"><strong>References:</strong> <a href="https://media.withings.com/press/press-releases/body-smart/20230418-body-smart-us-en.pdf" target="_blank" rel="noopener noreferrer">Weight precision specification</a> · <a href="https://www.withings.com/en-us/collections/body-smart" target="_blank" rel="noopener noreferrer">Product details</a></p>
+                  </div>
+                </article>
+                <article class="device-card" aria-labelledby="cuff-title">
+                  <img class="device-image" src="assets/integrations/withings-bpm-connect.jpg" alt="Withings BPM Connect blood-pressure monitor with a rolled gray upper-arm cuff" width="1200" height="1200">
+                  <div class="device-details">
+                    <p class="device-type">Upper-arm blood-pressure cuff</p>
+                    <h4 id="cuff-title">Withings BPM Connect</h4>
+                    <p>Measures systolic and diastolic blood pressure and heart rate. Withings specifies <strong>pressure-sensor accuracy of ±3 mmHg or 2% of the reading</strong> and pulse accuracy of ±5%. Blood-pressure measurement performance is also clinically validated.</p>
+                    <p class="device-links"><strong>References:</strong> <a href="https://media.withings.com/kits/guides/2020/bpm-connect/qig_bpm_connect_en-fr-de.pdf#page=21" target="_blank" rel="noopener noreferrer">Accuracy specifications</a> · <a href="https://www.withings.com/en-us/products/bpm-connect" target="_blank" rel="noopener noreferrer">Product details</a></p>
+                  </div>
+                </article>
+              </div>
+              <p class="integration-footnote"><a href="https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/public-health-data-api-overview/" target="_blank" rel="noopener noreferrer">Withings integration documentation</a> · Product photos: © Withings, from the linked product pages.</p>
             </div>
           </section>
           <section class="slide" id="user-test" aria-labelledby="user-test-title" aria-hidden="true" inert>
             <div class="slide-content">
               <p class="eyebrow">The feedback</p>
-              <h2 id="user-test-title">User Test</h2>
-              <p class="slide-intro">What happened when people tried it.</p>
-              <p class="slide-prompt">Explain the test tasks, key observations, and changes informed by feedback.</p>
+              <h2 id="user-test-title">User Test Feedback</h2>
             </div>
           </section>
           <section class="slide" id="report" aria-labelledby="report-title" aria-hidden="true" inert>
             <div class="slide-content">
               <p class="eyebrow">The takeaways</p>
-              <h2 id="report-title">Report</h2>
-              <p class="slide-intro">What we learned and where we go next.</p>
-              <p class="slide-prompt">Summarize outcomes, limitations, and next steps, with a link to the full report.</p>
+              <h2 id="report-title">Paper</h2>
+              <p class="slide-intro">The paper will be provided at the end of the project.</p>
             </div>
           </section>
           <section class="slide" id="team" aria-labelledby="team-title" aria-hidden="true" inert>
@@ -203,8 +302,34 @@
       <footer class="presentation-footer">
         <span>nochf.com</span>
         <span class="keyboard-hint">Use &#8592; and &#8594; to navigate</span>
-        <span id="slide-status" role="status" aria-live="polite" aria-atomic="true">01 / 08 · Welcome</span>
+        <span id="slide-status" role="status" aria-live="polite" aria-atomic="true">01 / 09 · Welcome</span>
       </footer>
     </div>
+    <dialog id="background-references" class="background-references" aria-labelledby="background-references-title">
+      <form method="dialog" class="references-header">
+        <h2 id="background-references-title">Research references</h2>
+        <button type="submit" autofocus>Close</button>
+      </form>
+      <h3>CHF</h3>
+      <ol>
+        <li id="background-reference-1">American Heart Association. (n.d.). <cite>Heart failure explained: Understanding symptoms, causes, diagnosis and treatment</cite>. Retrieved September 24, 2026, from <a href="https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained</a></li>
+        <li id="background-reference-2">American Heart Association. (2025, May 21). <cite>Types of heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure</a></li>
+        <li id="background-reference-3">Heart Failure Society of America. (2025). <cite>Incidence, prevalence, and lifetime risk estimates of heart failure: HFSTATS sheet, 2025 update</cite> [Fact sheet]. <a href="https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf" target="_blank" rel="noopener noreferrer">https://hfstats.org/wp-content/uploads/2025/11/HFSTATS-Fact-Sheet-2025_Incidence-Prevalence.pdf</a></li>
+        <li id="background-reference-4">National Center for Health Statistics. (2026, June 2). <cite>Multiple cause of death mortality file: Control total table 1, United States, 2023</cite> [Data table]. Centers for Disease Control and Prevention. <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf" target="_blank" rel="noopener noreferrer">https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf</a></li>
+        <li id="background-reference-5">Zilberberg, M. D., Nathanson, B. H., Sulham, K., Mohr, J. F., Goodwin, M. M., &amp; Shorr, A. F. (2023). Descriptive epidemiology and outcomes of patients with short stay hospitalizations for the treatment of congestive heart failure in the US. <cite>ClinicoEconomics and Outcomes Research, 15</cite>, 139–149. <a href="https://doi.org/10.2147/CEOR.S400882" target="_blank" rel="noopener noreferrer">https://doi.org/10.2147/CEOR.S400882</a></li>
+      </ol>
+      <h3>Measurements</h3>
+      <ol start="6">
+        <li id="background-reference-6">American Heart Association. (2025, May 29). <cite>Managing heart failure symptoms</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure/managing-heart-failure-symptoms" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure/managing-heart-failure-symptoms</a></li>
+        <li id="background-reference-7">American Heart Association. (2025, May 29). <cite>Heart failure signs and symptoms</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure</a></li>
+        <li id="background-reference-8">American Heart Association. (2024, May 9). <cite>How high blood pressure can lead to heart failure</cite>. <a href="https://www.heart.org/en/health-topics/high-blood-pressure/health-threats-from-high-blood-pressure/how-high-blood-pressure-can-lead-to-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/high-blood-pressure/health-threats-from-high-blood-pressure/how-high-blood-pressure-can-lead-to-heart-failure</a></li>
+        <li id="background-reference-9">American Heart Association. (2024, May 6). <cite>Low blood pressure: When blood pressure is too low</cite>. <a href="https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/low-blood-pressure-when-blood-pressure-is-too-low" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/low-blood-pressure-when-blood-pressure-is-too-low</a></li>
+        <li id="background-reference-10">American Heart Association. (2025, June 17). <cite>Medications used to treat heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/medications-used-to-treat-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/medications-used-to-treat-heart-failure</a></li>
+        <li id="background-reference-11">Heart Failure Association of the European Society of Cardiology. (n.d.). <cite>What you can do: Self-care for heart failure</cite>. <a href="https://www.heartfailurematters.org/what-you-can-do/" target="_blank" rel="noopener noreferrer">https://www.heartfailurematters.org/what-you-can-do/</a></li>
+        <li id="background-reference-12">American Heart Association. (2025, June 16). <cite>Lifestyle changes for heart failure</cite>. <a href="https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/lifestyle-changes-for-heart-failure" target="_blank" rel="noopener noreferrer">https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/lifestyle-changes-for-heart-failure</a></li>
+        <li id="background-reference-13">Ware, P., Dorai, M., Ross, H. J., Cafazzo, J. A., Laporte, A., Boodoo, C., &amp; Seto, E. (2019). Patient adherence to a mobile phone–based heart failure telemonitoring program: A longitudinal mixed-methods study. <cite>JMIR mHealth and uHealth, 7</cite>(2), Article e13259. <a href="https://doi.org/10.2196/13259" target="_blank" rel="noopener noreferrer">https://doi.org/10.2196/13259</a></li>
+        <li id="background-reference-14">Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., &amp; Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. <cite>Journal of Hypertension, 43</cite>(1), 90–97. <a href="https://doi.org/10.1097/HJH.0000000000003861" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/HJH.0000000000003861</a></li>
+      </ol>
+    </dialog>
   </body>
 </html>

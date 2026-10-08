@@ -4,17 +4,16 @@
 
 Explain the app and this project website to visitors with no prior knowledge of NoCHF.
 
-Layout: a centered title-and-logo group with the Cherry & Graphite app logo to the left of a slightly larger NoCHF title. Place the site-context sentence immediately below it, then explain the app. Left-align the body text, three bullets, and separate academic attribution paragraph. Give the attribution less visual weight with 16px muted text and 40px of space above it. Omit the contact paragraph, eyebrow, separate academic information card, and completion deadline.
+Layout: a centered title-and-logo group, followed by the NoCHF introduction and its two bullets. Place the italicized site-context paragraph below the introduction and bullets, using 16px muted text and 32px of space above it. Keep the institution name bold within the italics. Left-align the body text. Omit the contact paragraph, eyebrow, separate academic information card, and completion deadline.
 
 Current copy:
 
-This site explores the research, design, and development of NoCHF, a student capstone project at Harvard University Extension School.
+NoCHF is an app that aims to reduce avoidable hospitalizations and emergency room visits for people living with congestive heart failure by making it easier to track daily measurements by:
 
-The NoCHF app aims to reduce avoidable hospitalizations and emergency room visits for people living with congestive heart failure. The app:
+- Providing a simple, easy-to-use phone app designed for older adults.
+- Ensuring daily blood pressure and weight measurements through accountability provided by a friend, family member, or caregiver.
 
-- Ensures daily blood pressure and weight measurements.
-- Alerts patients when their readings meet doctor-defined criteria for follow up with their professional care giver.
-- Provides a simple, easy-to-use phone app designed for older adults.
+*This site outlines the purpose and development of the NoCHF app, a student capstone project to meet partial fulfillment of the requirements for a Master of Liberal Arts degree from **Harvard University Extension School***
 
 Display the institution's name as text only. Do not include a Harvard or Harvard Extension School logo; approval would be required before adding one.
 
@@ -37,6 +36,8 @@ The slide introduction includes the CHF definition, two common forms, and this m
 Evidence: AHA guidance explicitly lists daily weight and blood pressure tracking; sudden weight gain may indicate fluid retention. The healthcare team selects what to track and individual reporting thresholds. This supports monitoring as part of self-care, not a claim that either measurement alone prevents hospitalization or substitutes for the other. The guidance does not prescribe daily BP checks for every patient.
 
 ### The scale of the problem
+
+Slide summary: In the United States, an estimated **nearly 7 million adults** were living with heart failure based on 2017–2020 data, CHF was recorded as the underlying cause of **over 60,000 deaths in 2023**, and hospital admissions with CHF as the principal diagnosis accounted for an estimated **$14.5 billion in U.S. hospital costs in 2018**. This summary links to the slide’s existing references 3, 4, and 5, respectively.
 
 HFSA's 2025 fact sheet reports approximately **6.7 million U.S. adults aged 20 or older** with heart failure, based on **2017–2020** prevalence data. It projects that number will rise to **8.7 million in 2030**, **10.3 million in 2040**, and **11.4 million in 2050**.[^3]
 
@@ -122,6 +123,21 @@ Kohane's account of helping his 90-year-old mother manage heart failure connects
 
 **Possible visual:** a small origin-story card linking to the article, alongside a patient → measurement → supporter → care-team diagram. The diagram would represent the proposed workflow, not a tested intervention from the article.
 
+### Measurements introduction — CHF focus
+
+For people with **CHF**, daily weight checks can reveal **fluid buildup**. This extra fluid collects in the lungs, legs, or abdomen and may signal worsening heart failure.[^6][^24]
+
+Blood pressure is another important signal in **CHF**: high pressure increases the resistance the heart must pump against, adding to its workload.[^27] Low pressure can also accompany heart failure or result from heart-failure medicines.[^28][^25]
+
+**Early intervention** starts with reporting sudden weight gain or blood-pressure changes outside the care team’s agreed range, so the team can adjust treatment promptly.[^6][^29] In particular, responding to fluid-related weight gain—even before the person feels unwell—may help avoid hospitalization for worsening heart failure.[^30]
+
+For many people living with CHF, daily measurements become part of a routine, but others find them difficult to sustain. In one heart-failure study, patients completed all daily readings on about 74% of days,[^16] while a separate study of connected blood-pressure monitor users—not specifically people with CHF—found that only 54% continued using their device around a year later, and 44% of those continuing took only occasional measurements.[^19]
+
+**We believe a simple, easy-to-use app, combined with support and accountability from a caregiver, can help people take measurements more consistently.**
+
+Research interpretation: blood pressure is a contextual monitoring signal, not a direct measurement of fluid congestion or a standalone diagnostic test. A rising BP is not required for deterioration; low readings also have multiple possible causes. The hospitalization statement is specifically supported by AHA advice on promptly reporting weight changes and clinician-directed treatment adjustments, not proof that NoCHF or BP monitoring alone prevents admission.
+
+
 #### Why measure weight and blood pressure?
 
 The American Heart Association recommends tracking daily weight and blood pressure alongside symptoms. Rapid weight gain can reflect fluid retention, but the person's care team should define which changes require action. Breathlessness, swelling, and changes noticed by family also matter.[^6]
@@ -171,102 +187,80 @@ Removed from the site's slide sequence. Retain this section for future research 
 
 ### 1.1. Persona 1. Independent Living Patient Mary Johnson
 
-**74, Female, Retired Elementary School Teacher**
+**80, Female, Retired Elementary School Teacher**
 
 **Motto:** “Life is better when shared with family and friends.”
 
-<!-- Image pending: save the supplied portrait to pictures/mary.png when available. -->
-
-**Image pending:** Mary's portrait will be added here once supplied.
+![Mary Johnson gardening among flowers.](img/persona-chf-user.png)
 
 *Figure 2. Persona 1. Image was generated by ChatGPT*
 
 #### Bio
 
-Mary is a retired teacher who lives alone in her own home. She was diagnosed with congestive heart failure (CHF) three years ago and manages her condition with daily medication and regular medical appointments. Her cardiologist has advised her to weigh herself every morning because sudden weight gain may indicate fluid retention. Mary values her independence and wants to remain in her own home for as long as possible. She uses a smartphone for calls, messages, and a few simple applications but prefers technology that is easy to understand and requires minimal effort.
+Mary is a retired teacher who lives alone in her own home. She was diagnosed with congestive heart failure (CHF) four years ago and manages her condition with daily medication as well as recording her weight and eating habits in her CHF journal. Mary values her independence and wants to remain in her own home, but living at home independently has become more challenging and she quickly admits that her memory is not what it used to be.
 
 #### Business Domain
 
-- Lives alone.
-- Has congestive heart failure.
-- Manages her condition at home.
-- Takes medication every day.
-- Weighs herself every morning.
-- Visits her cardiologist regularly.
-- Talks to her daughter about her health.
-- Keeps health notes in a notebook.
-- Prefers simple technology.
-- Avoids complicated apps.
-- Technology: Samsung Galaxy A15, digital bathroom scale, home Wi-Fi.
+- Lives alone and has congestive heart failure.
+- Started managing her health using a Health Diary provided by her cardiologist.
+- Prefers simple technology and avoids complicated apps.
+- Has an old iPhone that no longer receives updates.
 
 #### Other People Say
 
-**What her family says:** “Mary wants to stay independent, but we're worried she may not notice early signs that her condition is getting worse. We wish there were an easier way to know she's doing well.”
+**What her family says:** “Mary wants to stay independent, but we're growing anxious about her ability to keep up with her self-care. We live a state away and aren't sure how to talk with her about when she might need help at home or how we could afford it.”
 
 **What her neighbour says:** “Mary is always friendly and enjoys taking care of her garden. She likes doing things on her own and rarely asks anyone for help.”
 
 #### Grokkability
 
-- Lives independently and values her routine.
-- Enjoys gardening and spending time with her family.
-- Prefers simple, practical solutions over new technology.
-- Uses her smartphone mainly for calls, messages, and photos.
-- Learns new apps if they are easy to use.
+- A Master Gardener who volunteers at the local high school from 9:00 AM to 3:00 PM on Tuesdays and Thursdays.
+- Talks to her eight-year-old granddaughter on Sunday afternoons.
+- Regularly talks to her neighbors about the weather.
 
 #### Pet Peeve
 
-- Gets frustrated when technology is more complicated than it needs to be.
-- Doesn't like apps with small text or confusing instructions.
-- Prefers clear reminders instead of constant notifications.
-- Wants tasks to be completed in just a few taps.
+- Becomes frustrated when people tell her technology is simple but it doesn't make sense to her.
+- Gets discouraged by her time being taken up by tasks that used to be easy for her.
 
-### 1.1. Persona 2. Family Caregiver Emily Carter
+### 1.1. Persona 2. Family Caregiver Emily Johnson
 
-**48, Female, Human Resources Manager**
+**48, Female, Program Manager**
 
 **Motto:** “Family means showing up when you're needed.”
 
-<!-- Image pending: save the supplied portrait to pictures/emily.png when available. -->
-
-**Image pending:** Emily's portrait will be added here once supplied.
+![Emily Johnson working at her laptop with her mother on a video call nearby.](img/persona-assistor.png)
 
 *Figure 3. Persona 2. Image was generated by ChatGPT*
 
 #### Bio
 
-Emily is a Human Resources Manager who enjoys a busy but well-organized life. She lives with her husband and teenage son and values spending time with her family. She is practical, dependable, and usually becomes the person everyone turns to when something needs to be organized. Over the past few years, she has gradually taken on more responsibility for helping her elderly father manage his congestive heart failure. While he still lives independently, Emily helps him stay on top of appointments, daily routines, and health records whenever he needs support.
+Emily is a Program Manager who is always trying to stay one step ahead in her busy life. She lives with her husband and teenage son and values spending time with her family. The family moved again for her and her husband’s new jobs and now lives in a city without family nearby, where they are excited to make new friends.
+
+Over the past few years, she has gradually taken on more responsibility for helping her elderly mother manage her congestive heart failure. While her mother lives independently, Emily is becoming anxious and uncertain about whether her mother is taking adequate care of herself.
 
 #### Business Domain
 
-- Works as a Human Resources Manager.
-- Balances work, family life, and caregiving responsibilities.
-- Organizes schedules and keeps important information in one place.
-- Helps her father manage his healthcare when needed.
-- Encourages healthy daily routines.
-- Values reliability and good communication.
-- Prefers practical technology that saves time.
-- Technology: iPhone 15, home Wi-Fi.
+- Works as a Program Manager because she is organized and good at juggling many different tasks.
+- Has to balance work, family life, and now some caregiving responsibilities for her mother, who lives one time zone away.
+- Bought herself the new iPhone 17, giving her son the iPhone 15.
 
 #### Other People Say
 
-**What her father says:** “Emily never makes me feel like I'm a burden. She just quietly helps whenever I need her.”
+**What her mother says:** “Emily never makes me feel like I'm a burden. But she's a little too much like I was at her age—always racing around.”
 
-**What her sister says:** “Emily is the person everyone relies on. She somehow manages to take care of everyone without making a big deal out of it.”
+**What her sister says:** “Emily is the person everyone relies on. She somehow manages to take care of everyone, and I can always call her and speak openly and honestly.”
 
 #### Grokkability
 
-- Enjoys spending time with her family and close friends.
-- Likes planning trips and family gatherings.
+- Enjoys spending time with her family and close friends and planning trips and family gatherings.
 - Reads books and listens to podcasts during her commute.
 - Uses technology every day but values simplicity over flashy features.
-- Feels responsible for the people she loves.
 
 #### Pet Peeve
 
-- Last-minute changes to carefully made plans.
+- Disorganized information and last-minute changes to carefully made plans.
 - Having to repeat the same task multiple times.
-- Disorganized information.
-- People who promise to help but never follow through.
 
 ### Why the older-adult focus matters
 
@@ -282,7 +276,38 @@ The same HFSA fact sheet reports these age-specific estimates from **NHANES 2021
 
 **Possible visual:** age-group bars, with a zero baseline and the survey period in the caption. These describe prevalence, not each age group's share of all cases.
 
-## Integration
+## Design
+
+Make daily measurements easy to understand and keep up with.
+
+### Devices
+
+- **Make taking a weight or blood pressure measurement easy.** NoCHF integrates with Wi-Fi-enabled scales and blood pressure cuffs. Once the devices are set up, the person living with CHF only needs to step on the scale or put on the cuff and push a button to take a measurement; readings sync automatically.
+
+### The app
+
+- **Make increases easy to spot.** When the person living with CHF or their assistor opens the app, they immediately *see any missed measurements* and any increases compared with earlier readings.
+- **Make Technology Easy:** Design for older adults with large text, easy navigation, and a simple app that does only what's needed.
+- **Create Reports:** Create a report that may be shared with your doctor during regular or emergency visits. View an example of the report [here](report.html).
+
+The slide places the home screen design (`img/app-home-transparent.png`) to the right of these points on desktop and below them on smaller screens, with a rounded 2px mist-gray border around the image.
+
+## Devices
+
+Tagline: The Devices.
+
+NoCHF is designed to grow with additional device integrations. Withings is the initial integration for weight and blood-pressure measurements. Devices are set up through the Withings app; with the user’s permission, NoCHF’s backend retrieves readings from their Withings account.
+
+Both devices support Wi-Fi, allowing readings to sync after a measurement. Once a user connects their Withings account, NoCHF can subscribe to measurement updates and retrieve new readings automatically for display in the app. Withings typically delivers update notifications within two minutes of receiving the data; device syncing and app refresh can add time. [How automatic updates work](https://developer.withings.com/developer-guide/v3/data-api/notifications/notification-overview/).
+
+- **Withings Body Smart — connected scale:** Records weight. Withings specifies **weight precision of 50 g (about 0.1 lb)**. [Weight precision specification](https://media.withings.com/press/press-releases/body-smart/20230418-body-smart-us-en.pdf) · [Product details](https://www.withings.com/en-us/collections/body-smart).
+- **Withings BPM Connect — upper-arm blood-pressure cuff:** Measures systolic and diastolic blood pressure and heart rate. Withings specifies **pressure-sensor accuracy of ±3 mmHg or 2% of the reading** and pulse accuracy of ±5%. Blood-pressure measurement performance is also clinically validated. [Accuracy specifications](https://media.withings.com/kits/guides/2020/bpm-connect/qig_bpm_connect_en-fr-de.pdf#page=21) · [Product details](https://www.withings.com/en-us/products/bpm-connect).
+
+[Withings integration documentation](https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/public-health-data-api-overview/).
+
+Architecture source: `../smartweight-backend/Documentation/architecture_doc.md`, sections on integration modules and Withings synchronization. Body Smart appears in API examples; BPM Connect is a provisional model selection pending confirmation.
+
+Product photos are stored in `assets/integrations/`, with sources and reuse status recorded in that folder’s README.
 
 ### Devices
 
@@ -306,29 +331,44 @@ The same HFSA fact sheet reports these age-specific estimates from **NHANES 2021
 
 **APA reference:** Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., & Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. *Journal of Hypertension, 43*(1), 90–97. [https://doi.org/10.1097/HJH.0000000000003861](https://doi.org/10.1097/HJH.0000000000003861).
 
-## Design
+## User Test Feedback
 
-## User Test
+## Paper
 
-## Report
+The paper will be provided at the end of the project.
+
+### Printable patient measurements prototype
+
+The screen-only **BP: Bars / BP: Lines** toggle starts in bars mode and switches to two solid daily-average lines: systolic with round points and diastolic with square points. Both retain labels and connect across missing days without adding markers. A legend appears in line mode; the selected chart view is used when printing.
+
+Separate `report.html` page linked from the Report slide. US Letter landscape with half-inch margins, 30 days, and vertically stacked charts sharing daily columns. The first draft uses explicitly fictional patient details and readings for September 1-30, 2026.
+
+- Blood pressure: one floating vertical bar per day, from daily-average diastolic to daily-average systolic. Label the average systolic above the bar and average diastolic below, rounded to whole mmHg. The sample averages two readings per day.
+- Weight: daily-average line in kilograms, with the average labeled above each point to one decimal place. The sample contains one or two readings on measured days.
+- Individual reading lists and timestamps are omitted; the chart space is used for the daily averages.
+- Left-aligned summaries show Period Avg and Total Readings followed by "over X days" (days with at least one reading for that measurement). Period averages use all individual readings. The sample has 52 BP readings over 26 days and 35 weight readings over 26 days.
+- Missing September 12-14 on both charts, September 23 for BP only, and September 6 for weight only. Retain all 30 date columns and omit missing bars, dots, and value labels. The weight line connects recorded days with straight lines across missing days. Missing days are excluded from averages and counts.
+- Print / Save as PDF uses the browser dialog. Controls are hidden in print. There are no clinical target ranges in the fictional prototype.
+- PDF review must check a single 11 x 8.5 inch page, readable labels, and sharp charts. This prototype contains no live data connection.
+- Header: centered reporting dates with centered patient name and date of birth underneath, enlarged to 15px. The italic note below reads "Measurements represent an average for the day." No reading-times field, report title, or sample banner. Small NoCHF branding sits at the bottom-left, followed by "This report was generated by the NoCHF app."
 
 ## Team
 
 # Background research endnotes (APA 7)
 
-[^21]: Zilberberg, M. D., Nathanson, B. H., Sulham, K., Mohr, J. F., Goodwin, M. M., & Shorr, A. F. (2023). Descriptive epidemiology and outcomes of patients with short stay hospitalizations for the treatment of congestive heart failure in the US. *ClinicoEconomics and Outcomes Research, 15*, 139–149. [https://doi.org/10.2147/CEOR.S400882](https://doi.org/10.2147/CEOR.S400882). Slide reference 6 corresponds to this entry.
+[^21]: Zilberberg, M. D., Nathanson, B. H., Sulham, K., Mohr, J. F., Goodwin, M. M., & Shorr, A. F. (2023). Descriptive epidemiology and outcomes of patients with short stay hospitalizations for the treatment of congestive heart failure in the US. *ClinicoEconomics and Outcomes Research, 15*, 139–149. [https://doi.org/10.2147/CEOR.S400882](https://doi.org/10.2147/CEOR.S400882). CHF slide reference 5 corresponds to this entry.
 
 [^20]: Heart Failure Society of America. (2025, September 22). *Cardiology experts warn of growing heart failure epidemic and soaring costs in new HF Stats 2025 report*. [Read the report announcement](https://hfsa.org/cardiology-experts-warn-growing-heart-failure-epidemic-and-soaring-costs-new-hf-stats-2025-report). The $46 billion total is the sum of the two reported cost components.
 
-[^19]: Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., & Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. *Journal of Hypertension, 43*(1), 90–97. [https://doi.org/10.1097/HJH.0000000000003861](https://doi.org/10.1097/HJH.0000000000003861). On the Background slide this is reference 8.
+[^19]: Rech, J.-S., Postel-Vinay, N., Vercamer, V., de Villèle, P., & Steichen, O. (2025). User engagement with home blood pressure monitoring: A multinational cohort using real-world data collected with a connected device. *Journal of Hypertension, 43*(1), 90–97. [https://doi.org/10.1097/HJH.0000000000003861](https://doi.org/10.1097/HJH.0000000000003861). On the Measurements slide this is reference 14.
 
 [^17]: American Heart Association. (2025a, June 19). *Advanced heart failure*. [Read the explanation](https://www.heart.org/en/health-topics/heart-failure/living-with-heart-failure-and-managing-advanced-hf/advanced-heart-failure).
 
-[^18]: National Center for Health Statistics. (2026, June 2). *Multiple cause of death mortality file: Control total table 1, United States, 2023* [Data table]. Centers for Disease Control and Prevention. [Read the table](https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf). Use row I50.0, Underlying cause column. The date is the table's printed generation date, not the year of deaths. Verified against the downloaded table; the separate 2023 file documentation identifies I50.0 as congestive heart failure. Slide reference 5 corresponds to this research-bank entry.
+[^18]: National Center for Health Statistics. (2026, June 2). *Multiple cause of death mortality file: Control total table 1, United States, 2023* [Data table]. Centers for Disease Control and Prevention. [Read the table](https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/mortality/Multiple-Cause-of-Death-File-Control-Total-Table-2023.pdf). Use row I50.0, Underlying cause column. The date is the table's printed generation date, not the year of deaths. Verified against the downloaded table; the separate 2023 file documentation identifies I50.0 as congestive heart failure. CHF slide reference 4 corresponds to this research-bank entry.
 
-[^16]: Ware, P., Dorai, M., Ross, H. J., Cafazzo, J. A., Laporte, A., Boodoo, C., & Seto, E. (2019). Patient adherence to a mobile phone–based heart failure telemonitoring program: A longitudinal mixed-methods study. *JMIR mHealth and uHealth, 7*(2), Article e13259. [https://doi.org/10.2196/13259](https://doi.org/10.2196/13259). On the Background slide this is reference 7; research-bank numbering is independent.
+[^16]: Ware, P., Dorai, M., Ross, H. J., Cafazzo, J. A., Laporte, A., Boodoo, C., & Seto, E. (2019). Patient adherence to a mobile phone–based heart failure telemonitoring program: A longitudinal mixed-methods study. *JMIR mHealth and uHealth, 7*(2), Article e13259. [https://doi.org/10.2196/13259](https://doi.org/10.2196/13259). On the Measurements slide this is reference 13; research-bank numbering is independent.
 
-These endnotes retain research-bank numbering. The site uses first-appearance order: 1. CHF overview; 2. HF types; 3. monitoring guidance; 4. prevalence; 5. mortality; 6. hospital costs; 7. daily monitoring; 8. Withings engagement. Bibliographic entries use APA style.
+These endnotes retain research-bank numbering. The site uses first-appearance order: CHF: 1. CHF overview; 2. HF types; 3. prevalence; 4. mortality; 5. hospital costs. Measurements: 6. monitoring guidance; 7. heart failure signs and symptoms; 8. high BP and heart workload; 9. low BP; 10. heart failure medications; 11. ESC self-care; 12. early response to weight changes; 13. daily monitoring; 14. Withings engagement. Bibliographic entries use APA style.
 
 [^1]: American Heart Association. (n.d.). *Heart failure explained: Understanding symptoms, causes, diagnosis and treatment*. Retrieved September 24, 2026, from [the AHA overview](https://www.heart.org/en/health-topics/heart-failure/heart-failure-explained).
 
@@ -359,3 +399,21 @@ These endnotes retain research-bank numbering. The site uses first-appearance or
 [^14]: De Lathauwer, I. L. J., Nieuwenhuys, W. W., Hafkamp, F., Regis, M., Brouwers, R. W. M., Funk, M., & Kemps, H. M. C. (2025). Remote patient monitoring in heart failure: A comprehensive meta-analysis of effective programme components for hospitalization and mortality reduction. *European Journal of Heart Failure, 27*(9), 1670–1685. [https://doi.org/10.1002/ejhf.3568](https://doi.org/10.1002/ejhf.3568).
 
 [^15]: Lam, K., Lu, A. D., Shi, Y., & Covinsky, K. E. (2020). Assessing telemedicine unreadiness among older adults in the United States during the COVID-19 pandemic. *JAMA Internal Medicine, 180*(10), 1389–1391. [https://doi.org/10.1001/jamainternmed.2020.2671](https://doi.org/10.1001/jamainternmed.2020.2671).
+
+[^22]: American Heart Association. (2025, August 14). *Home blood pressure monitoring*. https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home. Retained research; not currently cited on the slide.
+
+[^23]: National Institute of Diabetes and Digestive and Kidney Diseases. (2016, October). *Managing chronic kidney disease*. https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/managing. Retained research; not currently cited on the slide.
+
+[^24]: American Heart Association. (2025, May 29). *Heart failure signs and symptoms*. https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure. Measurements slide reference 7.
+
+[^25]: American Heart Association. (2025, June 17). *Medications used to treat heart failure*. https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/medications-used-to-treat-heart-failure. Measurements slide reference 10.
+
+[^26]: National Heart, Lung, and Blood Institute. (2022, March 24). *Heart failure: Treatment*. https://www.nhlbi.nih.gov/health/heart-failure/treatment. Retained research; not currently cited on the slide.
+
+[^27]: American Heart Association. (2024, May 9). *How high blood pressure can lead to heart failure*. https://www.heart.org/en/health-topics/high-blood-pressure/health-threats-from-high-blood-pressure/how-high-blood-pressure-can-lead-to-heart-failure. Measurements slide reference 8.
+
+[^28]: American Heart Association. (2024, May 6). *Low blood pressure: When blood pressure is too low*. https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/low-blood-pressure-when-blood-pressure-is-too-low. Measurements slide reference 9.
+
+[^29]: Heart Failure Association of the European Society of Cardiology. (n.d.). *What you can do: Self-care for heart failure*. https://www.heartfailurematters.org/what-you-can-do/. Measurements slide reference 11.
+
+[^30]: American Heart Association. (2025, June 16). *Lifestyle changes for heart failure*. https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/lifestyle-changes-for-heart-failure. Measurements slide reference 12.

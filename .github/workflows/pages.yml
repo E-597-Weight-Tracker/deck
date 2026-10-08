@@ -28,7 +28,7 @@ jobs:
       - name: Collect static site files
         run: |
           mkdir -p _site
-          cp index.html styles.css scripts.js _site/
+          cp index.html styles.css scripts.js report.html report.css report.js report-data.js _site/
           if [ -d img ]; then cp -R img _site/; fi
           if [ -d assets ]; then cp -R assets _site/; fi
       - name: Upload site

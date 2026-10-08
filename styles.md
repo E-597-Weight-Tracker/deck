@@ -62,4 +62,6 @@ The selected app logo uses Cherry `#D7263D` for the heart and Graphite `#343A40`
 
 The deck now uses the named palette tokens in `styles.css`: Cloud slide backgrounds, White navigation/footer surfaces and rounded prompt cards, Deep Slate headings, Slate supporting text, Teal selected navigation and accents, Pale Teal hover states, and Soft Stone borders. Other palette colors remain available for future content; the approximate Systolic Gold is reserved for blood-pressure graphics.
 
-The current slide order is Welcome, Background, Purpose, Personas, Integration, Design, User Test, Report, and Team.
+The current slide order is Welcome, CHF, Measurements, Personas, Integration, Design, User Test, Report, and Team. CHF presents the disease context, prevalence chart, mortality, and hospital costs; Measurements presents the daily weight and blood-pressure guidance, daily-monitoring evidence, and Withings evidence. Both open full research references in a scrollable dialog with readable 16px text.
+
+The presentation grid is constrained to the viewport width, while the navigation labels scroll horizontally on smaller screens. The prevalence chart uses a fixed 120px plotting area and a shared zero baseline, so bar heights remain proportional at every viewport size.

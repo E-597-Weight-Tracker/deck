@@ -4,6 +4,7 @@ const navigationButtons = Array.from(document.querySelectorAll('[data-slide]'));
 const previousButton = document.querySelector('#previous-slide');
 const nextButton = document.querySelector('#next-slide');
 const status = document.querySelector('#slide-status');
+const references = document.querySelector('#background-references');
 let currentSlide = 0;
 const slideStorageKey = `nochf:slide:${location.pathname}`;
 
@@ -61,11 +62,27 @@ previousButton.addEventListener('click', () => showSlide(currentSlide - 1));
 nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
 
 document.addEventListener('keydown', (event) => {
+  if (references.open) return;
   if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
   if (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
   if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
   event.preventDefault();
   showSlide(currentSlide + (event.key === 'ArrowRight' ? 1 : -1));
+});
+
+document.querySelectorAll('a[href^="#background-reference"]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    references.showModal();
+    const target = document.getElementById(link.hash.slice(1));
+    if (target !== references) {
+      target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ block: 'center', behavior: 'instant' });
+    } else {
+      references.scrollTop = 0;
+    }
+  });
 });
 
 showSlide(restoredSlideIndex());
